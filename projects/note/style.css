@@ -1,0 +1,142 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    
+}
+body{
+    font-family: 'Gotu', sans-serif;
+}
+#wrapper{
+    position: relative;
+    height: 800px;
+    width: 500px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin:20px auto;
+}
+li{
+    list-style-position: inside;
+}
+#header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding:0 10px;
+    line-height:40px;
+    height: 40px;
+    background-color: rgb(66, 109, 110);
+    color:white;
+    border-radius: 5px;
+}
+#header i{
+    font-size: 30px;
+    line-height: 40px;
+    color:orange;
+}
+#header i:hover{
+    color:white;
+    
+}
+
+#header #create{
+    height:400px;
+    width:400px;
+    position: absolute;
+    bottom: -450px;
+    background-color: skyblue;
+  
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px gray;
+
+}
+#header #create-title{
+    margin-top: 20px;
+    width: 360px;
+    line-height: 28px;
+}
+#create #create-content{
+    padding:10px;
+    width: 360px;
+    height:250px;
+}
+#notes li{
+    display: flex;
+    justify-content: space-between;
+    padding:5px;
+    border-bottom: 1px solid rgb(66, 109, 110);
+}
+#notes li i{
+    font-size: 20px;
+    line-height: 25px;
+}
+#notes li i:hover{
+    color:orange;
+}
+#notes li:hover{
+    box-shadow: 2px 2px 5px lightslategray;
+}
+#view{
+    position:fixed;
+    background-color: lightskyblue;
+    top:50px;
+    left:1050px;
+    width:500px;
+    height:400px;
+    text-align: center;
+    padding:10px;
+    
+}
+.show{
+    display:block;
+}
+.hide{
+    display:none;
+}
+#edit-form{
+    height:400px;
+    width:400px;
+    position: absolute;
+    bottom: -450px;
+    background-color: skyblue;
+    padding:10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px gray;
+
+}#header #edit-title{
+    margin-top: 20px;
+    width: 360px;
+    line-height: 28px;
+}
+ #edit-content{
+    display: block;
+    padding:10px;
+    width: 360px;
+    height:250px;
+}
+#del-all{
+    font-size: 30px;
+    color: red;
+    padding:10px;
+    position: fixed;
+    top: 650px;
+    left: 945px;
+}
+#del-all:hover{
+    color:palevioletred;
+}
+
+#view #time{
+    position: absolute;
+    bottom: 5px;
+    left:50px;
+}
+.br{
+    color:red;
+}

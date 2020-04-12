@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="icon/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id='header'>
+            <h1>Notes ever</h1>
+            <i id='new' class="fas fa-plus-circle"></i>
+            <div id="create" class="hide">
+                <input type="text"  id="create-title">
+                <textarea id="create-content" cols="30" rows="30"></textarea>
+                <i id="create-button" class="fas fa-plus-circle"></i>
+            </div>
+            <div id="edit-form" class="hide">
+                <input type="hidden" name="id" id='edit-id' value="0">
+                <input type="text"  id="edit-title">
+                <textarea id="edit-content" cols="30" rows="30"></textarea>
+                <i id="edit-button" class="fas fa-plus-circle"></i>
+            </div>
+        </div>
+        <ul id="notes">
+            
+        </ul>
+        <i id='del-all' class="fas fa-skull"></i>
+    </div>
+    
+</body>
+<script src="Note.js"></script>
+<script src="ListNote.js"></script>
+<script src="display.js"></script>
+<script src="main.js"></script>
+</html>

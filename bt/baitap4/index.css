@@ -1,0 +1,136 @@
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+        outline: none;
+        text-decoration: none;
+
+    }
+
+body{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    font-family: sans-serif;
+    background-color: #F7F6F1;
+}
+#main{
+    flex-basis:510px;
+    background-color: aqua;
+    padding: 79px 60px 0 77px;
+    background-color: #FFFFFF;
+    height: 700px;
+}
+#main #login .img-wrapper img{
+    height: 32px;
+
+}
+#main form{
+    padding-top: 25px;
+    color:#978C94;
+}
+#main form p{
+    padding-bottom: 20px;
+}
+#main .in{
+    margin:8px 0;
+    padding:9px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+#main .form label{
+    display: block;
+    font-size: 0.7em;
+    margin-bottom: 5px;
+}
+#main .form input[type=email],#main .form input[type=password]{
+    border: none;
+    min-width: 355px;
+}
+#main input[type=submit]{
+    background-color: #3395ED;
+    width: 120px;
+    height:35px;
+    margin:17px 0;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    margin-right:130px;
+    opacity: 0.9;
+}
+#main a{
+    color:#007BE8;
+    text-shadow: 0 0 8px rgba(0,0,0,0.2);
+    line-height:35px;
+    opacity: 0.8;
+}
+/*buuton beautiful*/
+button.beautiful{
+    width:370px;
+    height:35px;
+    margin:5px;
+    border:none;
+    border-radius: 5px;
+    position: relative;
+    opacity: 0.9;
+    color: white;
+}
+button.beautiful span:first-child{
+    display: inline-block;
+    width: 35px;
+    height:37px;
+    font-size: 25px;
+    border-right:1px solid rgba(0,0,0,0.2);
+    line-height: 37px;
+    position: absolute;
+    top:0;
+    left:0px;
+}
+button.beautiful span:last-child{
+    display: inline-block;
+    width:335px;
+    height: 37px;
+    line-height: 37px;
+    position: absolute;
+    top:0;
+    right:0;
+    text-align: left;
+    text-indent: 7px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.other a#a{
+    margin-top:20px;
+    display: inline-block;
+
+   
+}
+/*color for button*/
+.fb-color{
+    background-color: #2D4373;
+    
+}
+.g-color{
+    background-color: #C23321;
+}
+div#ads p:first-child{
+    padding:10px;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 40px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    color: #373e43;
+}
+div#ads p:last-child{
+    font-size: 0.8em;
+    padding:10px;
+    
+}
+div#ads>div{
+    position: relative;
+    left:2px;
+    bottom: -608px;
+}
+
+a:hover,input[type="submit"]:hover,button:hover{
+    opacity: 1 !important;
+}

@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: roboto,"segoe ui",Helvetica,Arial,sans-serif;
+}
+.container{
+    width:980px;
+    margin: 20px auto;
+}
+.container .head{
+    border-bottom: 1px solid #00acc1;
+}
+.container .head h3{
+    display: inline-block;
+    background-color: #00acc1;
+    color:white;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+.container ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.container ul li{
+    flex-basis: 25%;
+    height: 50px;
+    line-height: 50px;
+    background-image: url('icon.png');
+    background-repeat: no-repeat;
+    position: relative;
+}
+.container ul li a{
+    font-size: 14px;
+    color:black;
+    padding: 5px;
+    padding-left:30px;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.container ul li a:hover{
+    text-shadow:0 0 1.2px #00acc1;
+    color: #00acc1;
+}
+.container ul li:nth-child(1){
+    background-position: 0px 0px;
+}
+.container ul li:nth-child(2){
+    background-position: 0px -52px;
+}
+.container ul li:nth-child(3){
+    background-position: 0px -104px;
+
+}
+.container ul li:nth-child(4){
+    background-position: 0px -156px;
+}.container ul li:nth-child(5){
+    background-position: 0px -208px;
+}.container ul li:nth-child(7){
+    background-position: 0px -250px;
+}.container ul li:nth-child(8){
+    background-position: 0px -302px;
+}.container ul li:nth-child(9){
+    background-position: 0px -354px;
+}.container ul li:nth-child(10){
+    background-position: 0px -408px;
+}.container ul li:nth-child(11){
+    background-position: 0px -460px;
+}.container ul li:nth-child(12){
+    background-position: 0px -512px;
+}
+
+li.new::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height:10px;
+    background:url(new2.gif);
+    background-repeat: no-repeat;
+    position: relative;
+    top:0px;
+    left:3px;
+}
+li.hot::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height:10px;
+    background:url(hot.gif);
+    background-repeat: no-repeat;
+    position: relative;
+    top:0px;
+    left:3px;
+}

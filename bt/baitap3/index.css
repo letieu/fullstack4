@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    padding: 20px;
+}
+/*iphone botton */
+label.checkbox input{
+    display:none;
+}
+label.checkbox{
+    position: relative;
+    display: block;
+    margin: 10px;
+}
+.checkbox .back{
+    width: 46px;
+    height: 27px;
+    border-radius:12px;
+    background-color: rgb(48, 42, 42);
+    position: absolute;
+    top:0;
+    left:0;
+}
+.checkbox .font{
+    display: inline-block;
+    width: 25px;
+    height:25px;
+    background-color: rgb(168, 162, 173);
+    border-radius:50%;
+    position: absolute;
+    top:1px;
+    left:1px;
+}
+label>input:checked ~ .font{
+    left:20px;
+    background-color: rgb(9, 238, 9);
+}
+label>input:checked ~ .back{
+    background-color: forestgreen;
+}
+
+/* Switch tab*/
+#b1{
+    position: relative;
+    top:50px;
+    
+}
+div.tab{
+    width: 505px;
+    position: relative;
+    background-color: rgb(211, 200, 200);
+    top:100px;
+    left:20px;
+    text-align: center;
+    border-radius: 10%;
+    padding: 5px;
+    
+}
+.tab input{
+    display: none;
+}
+.tab p{
+    border-radius: 10%;
+    margin-top: 10px;
+    display: none;
+    border: 1px solid black;
+    height: 300px;
+    width:500px;
+    position: absolute;
+    top:50px;
+    left:5px;
+    background-color: lightblue;
+    
+}
+.tab label>div{
+    display: none;
+}
+.tab label{
+    height: 50px;
+    display: inline-block;
+    width:30%;
+    line-height: 50px;
+    border: 1px solid green;
+    background-color: hotpink;
+    border-radius: 5px;
+}
+.tab label:hover{
+    background-color: lawngreen;
+}
+.tab input:checked ~ p{
+    display: block;
+}
+.tab input:checked + div{
+    display: block;
+    background-color:yellow;
+    width:100px;
+    height:5px;
+    margin:auto;
+    position: relative;
+    top:-7px;
+    border-radius: 20%;
+}
