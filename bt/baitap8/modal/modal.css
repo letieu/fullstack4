@@ -1,0 +1,16 @@
+.modal {
+    position: fixed;
+    top: 100px;
+    right: 60%;
+}
+
+.modal .close {
+    background-image: url('./close.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    text-indent: -99999px;
+    position: absolute;
+    right: 20px;
+}
